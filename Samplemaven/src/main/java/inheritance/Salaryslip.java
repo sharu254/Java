@@ -2,7 +2,7 @@ package inheritance;
 
 public class Salaryslip extends calculate
 {
-	private totalsalary;
+	private double totalsalary;
 	
 	public void total()
 	{
@@ -10,7 +10,7 @@ public class Salaryslip extends calculate
 	}
 	public void display()
 	{
-	 System.out.printf("Basic Pay:  $%.2f%n", basicPay);
+	 System.out.printf("Basic Pay:  $%.2f%n", basicpay);
     System.out.printf("HRA:        $%.2f%n", hra);
     System.out.printf("PF:         $%.2f%n", pf);
     System.out.printf("Deduction:  $%.2f%n", deduction);
@@ -19,19 +19,20 @@ public class Salaryslip extends calculate
 
 	}
     public class EmployeeSalary {
-        public static void main(String[] args)
+        public void main(String[] args)
         
         {
             Salaryslip salaryslip = new Salaryslip();
+            EmployeeDetail e= new EmployeeDetail();
+            e.Details();
             
-            salarySlip.EmployeeDetail();
+            Salaryslip.cal();
             
-            salarySlip.cal();
+            salaryslip.total();
             
-            salarySlip.total();
-            
-            salarySlip.display();
+            salaryslip.display();
         }
+    
     }
-
+}
 
